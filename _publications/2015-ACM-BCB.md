@@ -4,7 +4,7 @@ collection: publications
 category: posters
 permalink: /publication/2015-ACM-BCB
 excerpt: 'A poster presentation for early HPC-BLAST architecture.'
-date: 2024-09-12
+date: 2015-09-12
 venue: '6th ACM Conference on Bioinformatics, Computational Biology and Health Informatics'
 paperurl: 'http://shedsaw.github.io/files/hpc_blast_poster_two_logos10.pdf'
 ---

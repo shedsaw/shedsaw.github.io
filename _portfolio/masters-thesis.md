@@ -1,6 +1,6 @@
 ---
 title: "Masters Thesis Research"
-excerpt: "I discuss my Masters research code results. <br/><img src='/images/masters-thesis.png'>"
+excerpt: "I discuss my Masters research code results. <br/><img src='/images/masters.png'>"
 collection: portfolio
 ---
 The topic of my Master's thesis and research was to analyze and implement a high-order finite volume method for solving the Navier-Stokes equations.

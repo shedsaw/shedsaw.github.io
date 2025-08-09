@@ -15,7 +15,7 @@ where $$ s \in (0,1) $$.
 The fractional Laplacian can be defined in numerous ways. See [this paper](https://arxiv.org/pdf/1507.07356) or
 [this paper](https://arxiv.org/pdf/1801.09767) to see some the definitions.
 
-The spectral fractional Laplacian is a particular interpretation. To get a better idea we can briefly discuss spectral theory.
+The spectral fractional Laplacian is a particular interpretation. To get a better idea we will introduce a results from spectral theory.
 Spectral theory tells us that $$-\Delta$$ has a countable set of eigenpairs $$\{ \lambda_k, \phi_k \}_k$$ such that the $$ \phi_k $$'s
 form an orthonormal basis of $$L^2(\Omega)$$. So if we have some smooth function $$w(x)$$, we can expand this function in that basis, i.e.,
 \\[ w(x) = \sum_k w_k(x) \phi_k(x) \,\, , \\]
@@ -28,7 +28,18 @@ The takeaway is that if we know the eigenpairs we can write the solution to the 
 Unfortunately, finding the eigenpairs is both computationally expensive and unstable. Fortunately, Caffarelli and Silvestre showed that the
 problem of the spectral fractional Laplacian in $$d$$ dimensions is related to a problem in $$d+1$$ dimensions with no fractional derivatives.
 This extended problem is amenable to solving by the finite element method and was extensively studied by doctoral advisor Dr. Abner Salgado
-and his collaborators. 
+and his collaborators. A major result from [this paper](https://arxiv.org/pdf/1707.07367) is that the $$d+1$$ dimensional problem can be
+decomposed, separating the problem in $$\Omega$$ from the extended dimension. The problem in the extended dimension can be further simplified by
+introducing an auxiliary eigenvalue problem. Working with my advisor, I found the analytical solution to the auxiliary problem rather than
+numerically solve the disretized eigenvalue problem as has been previously done.
+
+Perhaps the most significant contribution of my research came about during the error analysis of the new method. In showing the theoretical convergence
+rate, I was able to show that the new method is a quadrature for the Balakrishann formulation of the spectral fractional Laplacian.
+This hints at a deeper connection between the interpretations of the fractional Laplacian.
+
+Having a computational and scientific programming background, I implemented the method in C++ using the [deal.ii](https://dealii.org/) finite element
+library. I was able to rapidly implement my algorithm and demonstrate that it recovers the theoretical convergence rate in practice.
+I was similarly able to show the algorithm was efficient in the sense that it exhibits excellent strong and weak parallel scaling.
 
 Links
 ===

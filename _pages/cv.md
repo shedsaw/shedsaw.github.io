@@ -17,6 +17,9 @@ Education
 
 Work experience
 ======
+* August 2025 - Current: Adjunct Faculty
+  * Pellissippi State Technical Community College: Mathematics Department
+  * Instructor of record for a one semester precalculus course.
 * August 2024 - May 2025: Term Lecturer
   * University of Tennessee, Knoxville: Mathematics Department
   * I was an instructor of record for an introductory statistics course.
